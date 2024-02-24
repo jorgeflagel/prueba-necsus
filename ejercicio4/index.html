@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<head>
+    <style>
+        p.bg-green {
+            background-color: green;
+        }
+        p.bg-red {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Necsus - Ejercicio 4</h1>
+    <p class="bg-red">Crea una página web simple con un encabezado, un párrafo de texto y un botón.</p>
+    <button>Cambiar color del fondo del texto</button>
+    <script>
+        document.querySelector('button').addEventListener('click', (e) => {
+            console.log("cambiar color")
+            e.preventDefault();
+            const p = document.querySelector('p');
+            const classes = p.classList;
+            if(classes.contains("bg-red")) {  
+                classes.replace("bg-red", "bg-green")
+            } else {
+                p.classList.replace("bg-green", "bg-red")
+            }
+        })
+    </script>
+</body>
+
