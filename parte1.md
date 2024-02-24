@@ -1,0 +1,13 @@
+# Parte 1: Respuestas
+1. 
+  - Margin es el espacio que exise alrededor de un elemento HTML. El padding es la distancia que existe entre el contenido y el borde de un elemento HTML.
+  - El modelo de caja es un conjunto de componentes que conforman un elemento HTML y definen sus dimensiones visuales y cómo se posiciona en la página. En este modelo se incluye el contenido de la caja, el padding de la caja, el borde y el margen.
+
+2.
+  - El hoisting en javascript se refiere al comportamiento de mover automáticamente las declaraciones de variables y funciones al inicio de su alcance (scope). Esto sucede porque el intérprete en los navegadores pre-escanea (Just-In-Time compilation) el código identificando las variables y las funciones declaradadas y su alcance, para luego pasar a ejectutar el código.
+  - var refiere a variables con alcance global o de función. En cambio una variable declarada con let tiene un alcance de bloque (lo que incluye for loops, condicionales if, etc...). Otra diferencia es que si bien ambas variables están influenciadas por el comportamiento de hoisting, las variables var son inicializadas con undefined, en cambio las variables let no son inicializadas y no pueden ser accedidas hasta su inicialización pues obtendríamos un error. En el caso de const son variables cuyo valor no puede redeclarado, aunque si modificado (por ej: en caso de objetos o listas).
+  - La propagación de eventos tiene dos fases, el de bubbling y el de capturing. Cuando se genera un evento en un elemento objetivo (target), en la fase de bubbling los listeners que están asociados al target se ejecutan en primer lugar, y luego se ejecuta el del ancestro (padre), y así consecutivamente hasta llegar al elemento raíz del documento. En la fase de captura el flujo es al revés, iniciando en el elemento raíz hasta llegar al elemento objetivo.
+
+3.
+  - Un media query permite aplicar estilos diferenciados dependiendo las propiedaes del dispositivo o navegador en las que se está ejecutando la página web o aplicación. Se utiliza con la palabra @media seguido del tipo de dispositvo (screen, print, etc) y las condiciones en las que se quiere que apliquen los estilos (por ejemplo teniendo en cuenta el ancho o alto del dispositivo, o su disposición: portrait o landscape, o su resolución, etc...)
+  - Para hacer una imagen responsiva se pueden utilizar unidades de medida relativas en lugar de absolutas (ej: % en lugar de px). Otra alternativa es usar el tag <picture> y <source> de manera conjunta para definir direntes imágenes de acuerdo al tipo de dispositivo (media) en la que se va a mostrar la imagen.
