@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+body h1 {
+  text-align: center;
+  width: 100%;
+}
+body h2 {
+  margin: 10px;
+  padding: 10px;
+}
+body p {
+  margin: 10px;
+  padding: 10px;
+  text-align: justify;
+}
+
+header {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+header button {
+  background-color: red;
+  margin: 20px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+footer {
+  margin: 0;
+  padding: 0;
+  background-color: gray;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+footer p {
+  margin-left: 20px;
+}
+
+/*# sourceMappingURL=styles.css.map */

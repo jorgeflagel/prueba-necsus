@@ -1,0 +1,44 @@
+
+$bg-color-button: red
+$bg-color-footer: gray
+
+@mixin reset-margin-and-padding($value: 0)
+    margin: $value
+    padding: $value
+
+body
+    @include reset-margin-and-padding()
+    h1
+        text-align: center
+        width: 100%
+    h2 
+        @include reset-margin-and-padding(10px)
+    p
+        @include reset-margin-and-padding(10px)
+        text-align: justify
+
+    
+
+header
+    @include reset-margin-and-padding()
+    width: 100%
+    display: flex
+    justify-content: flex-end
+    button
+        background-color: $bg-color-button
+        margin: 20px
+        padding: 10px
+        cursor: pointer
+footer
+    @include reset-margin-and-padding()
+    background-color: $bg-color-footer
+    width: 100%
+    height: 100px
+    display: flex
+    align-items: center
+    p
+        margin-left: 20px
+
+
+
+
